@@ -5,9 +5,16 @@ import Nav from './components/Nav';
 import Home from './components/Home';
 import Errorpage from './components/Errorpage';
 import MyProjects from './components/MyProjects';
+import portfolioData from "./data/data.json"
+import { useState } from 'react';
 
 
 function App() {
+
+  const [data, setData] = useState(portfolioData)
+  // console.log(data[0].name);
+ 
+
   return (
     <div className="App">
 
@@ -18,9 +25,11 @@ function App() {
   <Routes>
     <Route path='/' element={<Home />} />
     <Route path='/*' element={<Errorpage />} />
-    <Route path='/myprojects' element={<MyProjects />} />
+    <Route path='/myprojects' element={<MyProjects data={data} />} />
+    {/* {data.map(i => <Card i={i}/>)} */}
   </Routes>
 </div>
+
 
 
 <Footer />

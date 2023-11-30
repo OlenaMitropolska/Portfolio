@@ -14,21 +14,22 @@ body {
 .App {
   height: 100%;
   width: 100%;
-  background-color: beige;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: #688178;
+  color: #5B4C43;
 }
 .nav {
   height: 10%;
-  background-color: lightblue;
   display: flex;
   justify-content: space-between;
+  padding: 10px;
   /* background-color: transparent; */
 }
 .navLink {
   text-decoration: none;
-  color: black;
+  color: #5B4C43;
 }
 
 .namediv {
@@ -40,6 +41,7 @@ body {
   text-align: center;
   font-weight: bold;
   text-decoration: none;
+  color: #5B4C43;
 }
 .bmenu {
 width: 70%;
@@ -51,14 +53,83 @@ padding: 10px;
 .main {
   /* height: calc(100%-200px); */
  flex-grow: 1;
-  background-color: rosybrown;
 }
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+ background-color:#688178;
+}
+.card {
+  height: 400px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  gap: 50px;
+  border: 1px solid #5B4C43;
+  border-radius: 5px;
+}
+.name{
+  font-weight: bold;
+  text-align: center;
+  }
+  .image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border: none;
+    border-radius: 5px;  
+  }
+  .homemain {
+flex-grow: 1;
+background-color:#688178;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+  }
+  .top {
+    height: 300px;
+    width: 90%;
+    background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+ font-size: 2em;
+ /* background-image: ""; */
+  }
+  .education {
+width: 100%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+gap: 10px;
+  }
+  .education h4 {
+    text-transform: uppercase;
+  }
 .footer {
   height: 10%;
-  background-color: lightblue;
+  gap: 5px;
+  background-color: #688178;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 10px;
+  color: #5B4C43;
+}
+.icons {
+  display: flex;
+  gap: 10px;
 }
