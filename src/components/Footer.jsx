@@ -4,13 +4,13 @@ import React from 'react'
 function Footer() {
   return (
     <div className='footer'>
-      <p>All rights reverved</p>
+      <p>Olena Mitropolska</p>
       <div class="icons">
-        <ion-icon name="logo-github"></ion-icon>
-        <ion-icon name="logo-linkedin"></ion-icon>
-        <ion-icon name="logo-whatsapp"></ion-icon>
+        <a target='blank' href="https://github.com/OlenaMitropolska"> <ion-icon name="logo-github"></ion-icon></a>
+       <a target='blank' href="https://www.linkedin.com/in/olena-mitropolska-147a07234/"><ion-icon name="logo-linkedin"></ion-icon></a>
+       <a target='blank' href="https://www.whatsapp.com/"><ion-icon name="logo-whatsapp"></ion-icon></a>
+        
       </div>
-      {/* <a href="https://github.com/OlenaMitropolska?tab=repositories"><ion-icon name="logo-github"></ion-icon></a> */}
 
 
 

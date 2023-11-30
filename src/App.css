@@ -11,14 +11,16 @@ body {
   height: 100%;
   width: 100%;
 }
+/* #688178; background */
+/*  text #5B4C43;*/
 .App {
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #688178;
-  color: #5B4C43;
+  background-color: #000000;
+  color: #FBFCFF;
 }
 .nav {
   height: 10%;
@@ -29,7 +31,7 @@ body {
 }
 .navLink {
   text-decoration: none;
-  color: #5B4C43;
+  color: #e4cb86;
 }
 
 .namediv {
@@ -41,7 +43,7 @@ body {
   text-align: center;
   font-weight: bold;
   text-decoration: none;
-  color: #5B4C43;
+  color: #e4cb86;
 }
 .bmenu {
 width: 70%;
@@ -63,28 +65,37 @@ padding: 10px;
   justify-content: center;
   gap: 20px;
   padding: 20px;
- background-color:#688178;
+ background-color:#000000;
 }
 .card {
-  height: 400px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   text-align: center;
   padding: 10px;
   gap: 50px;
-  border: 1px solid #5B4C43;
-  border-radius: 5px;
+  border: 1px solid #e4cb86;
+  border-radius: 20px;
+}
+.card img {
+  height: 180px;
+  width: 100%;
+  object-fit: contain;
+}
+.tag {
+  text-decoration: none;
+  color: #FBFCFF;
 }
 .name{
   font-weight: bold;
   text-align: center;
   }
   .image {
-    height: 100%;
-    width: 100%;
+    height: 200px;
+    width: 200px;
     object-fit: cover;
     object-position: center;
     border: none;
@@ -92,21 +103,43 @@ padding: 10px;
   }
   .homemain {
 flex-grow: 1;
-background-color:#688178;
+background-color:#000000;;
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
+gap: 10px;
   }
   .top {
-    height: 300px;
-    width: 90%;
-    background-color: white;
+    height: 685px;
+    width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: end;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
  font-size: 2em;
- /* background-image: ""; */
+background-image: url("https://ik.imagekit.io/lnmtrplsk/Olena_Mitropolska_photo.jpg?updatedAt=1701371853974");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+text-align: center;
+box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.253);
+
+  }
+  .technologies {
+    height: 200px;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .technologies img {
+    height: 70px;
+    width: 90px;
+    object-fit: contain;
+    object-position: center;
   }
   .education {
 width: 100%;
@@ -115,21 +148,150 @@ width: 100%;
     flex-direction: column;
 gap: 10px;
   }
+  .education h2 {
+    color: #e4cb86;
+  }
   .education h4 {
     text-transform: uppercase;
+  }
+  .contactUs {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .form input {
+    padding: 0 5px;
+  }
+  .form button {
+    padding: 10px 20px;
+    border: 1px solid #e4cb86;
+    border-radius: 10px;
   }
 .footer {
   height: 10%;
   gap: 5px;
-  background-color: #688178;
+  background-color: #000000;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 10px;
-  color: #5B4C43;
+  color: #e4cb86;
+}
+.footer  a {
+  color:#e4cb86;
 }
 .icons {
   display: flex;
   gap: 10px;
 }
+
+/* surface pro 7 */
+
+/* projects page tablet */
+@media (min-width: 912px) {
+  .card {
+    height: 350px;
+    width: 350px;
+  font-size: 2em;
+  flex-direction: row;
+  flex-wrap: wrap;
+  }
+}
+@media (min-width: 912px) {
+  .container {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 0;
+  }
+}
+@media (min-width: 912px) {
+  .namediv {
+ width: 50%;
+ padding-left: 40px;
+  }
+}
+
+/* nav and footer tablet */
+@media (min-width: 912px) {
+  .nav {
+ font-size: 2em;
+ padding: 20px;
+  }
+}
+@media (min-width: 912px) {
+  .footer {
+ font-size: 2em;
+ height: 15%;
+  }
+}
+
+/* home page tablet */
+@media (min-width: 912px) {
+  .homemain {
+ font-size: 2em;
+  }
+}
+@media (min-width: 912px) {
+  .form input {
+ height: 50px;
+ width: 300px;
+  }
+}
+@media (min-width: 912px) {
+  .form button {
+font-size: 20px;
+margin-bottom: 10px;
+  }
+}
+@media (min-width: 912px) {
+  textarea {
+ height: 80px;
+ width: 300px;
+  }
+}
+
+/* laptop queries */
+@media (min-width: 1200px) {
+  .App {
+overflow-x: hidden;
+  }
+}
+@media (min-width: 1200px) {
+  .homemain {
+    font-size: 25px;
+     }
+}
+@media (min-width: 1200px) {
+  .education {
+    width: 700px;
+    text-align: center;
+     }
+}
+@media (min-width: 1200px) {
+  .top {
+    background-image: url("https://ik.imagekit.io/lnmtrplsk/Olena_Mitropolska_photobackground.jpg?updatedAt=1701374723072");
+    background-size: cover;
+    height: 750px;
+    /* mix-blend-mode: normal; */
+     }
+}
+@media (min-width: 1200px) {
+  .contactUs  {
+  justify-content: center;
+  align-items: center;
+     }
+}
+
+
+
+
+

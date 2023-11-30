@@ -1,26 +1,23 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
-// import RecipeImage from "../RecipeProject.png"
+// import { Link, useNavigate } from 'react-router-dom'
+// import { useMediaQuery } from 'react-responsive'
 
 
 function MyProjects(props) {
+ 
+  // const isTablet = useMediaQuery({ query: '(min-width: 912px)' })
+  // const isBigScreen = useMediaQuery({ query: '(min-width: 1200px)' })
 
-  // const navigate = useNavigate()
-
-  // function projectLink() {
-
-  //   navigate(props.data.link) //ask about Use Effect
-  // }
   return (
     <div className='container'>
-      {/* <img src={RecipeImage} alt="" /> */}
 
 {props.data.map((i,j) =>
-  <div key={j} className="card">
+  <div  key={j} className="card">
+      <a className='tag' target='blank' href={i.link}>
 <img className='image' src={i.image} alt="" />
 <h2 className='name'>{i.name}</h2>
-{/* <p>{i.link}</p> */}
-  </div>
+</a>
+</div>
   )}
 
     </div>

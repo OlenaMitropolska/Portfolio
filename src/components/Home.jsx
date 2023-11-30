@@ -41,10 +41,21 @@ function Home() {
   return (
     <div className='homemain'>
 
-      <div className="top">Olena Mitropolska</div>
+      <div className="top">Olena Mitropolska <br /> Front-End Developer</div>
 <br />
-<h1>Education</h1>
-<br />
+
+
+<h2>Skills</h2>
+<div className='technologies'>
+  <img src="https://www.freeiconspng.com/thumbs/html5-icon/html5-icon-1.png" alt="html" />
+  <img src="https://static-00.iconduck.com/assets.00/file-type-css-icon-1806x2048-r5fwjl3p.png" alt="css" />
+<img src="https://static.vecteezy.com/system/resources/previews/027/127/463/original/javascript-logo-javascript-icon-transparent-free-png.png" alt="javascript" />
+<img src="https://assets.stickpng.com/images/584830f5cef1014c0b5e4aa1.png" alt="react" />
+</div>
+
+
+<h2 className='educationh2'>Education</h2>
+
   {education.map(i => 
  <div className="education">
   <h2>{i.year}</h2>
@@ -53,13 +64,16 @@ function Home() {
 <p>{i.certificate}</p>
 </div> )}
 
-<br />
-<h1>Technologies</h1>
-<br />
 
-<div className="experiences">
+<div className='contactUs'>
+  <h2>Contact Me</h2>
+  <form className='form' action="">
+    <input placeholder='your email address' type="email" />
+    <input placeholder='your phone number' type="number" />
+    <textarea placeholder=' your message' name="" id="" cols="30" rows="5"></textarea>
+    <button type='submit'>Contact</button>
+  </form>
 </div>
-
 
 
     </div>
